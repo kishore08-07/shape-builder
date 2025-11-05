@@ -17,7 +17,7 @@ const ShapeBuilder = () => {
 
   const handleCopyToClipboard = async () => {
     if (!result.trim()) return;
-    
+
     try {
       await navigator.clipboard.writeText(result);
       setShowCopied(true);
