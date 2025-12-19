@@ -23,9 +23,9 @@ jobs:
         run: bash ./script.sh
 
       - name: Upload files
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v4
         with:
-          name: public-dir
+          name: site-dir
           path: ./public-dir.zip
           retention-days: 1
       - name: Trigger Inner workflow
